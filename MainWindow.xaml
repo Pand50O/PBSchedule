@@ -1,0 +1,672 @@
+﻿<Window x:Class="ScPd.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScPd"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="675" Width="1200" MinHeight="675" MinWidth="1200" FontSize="18">
+    <Grid>
+        <Grid x:Name="parentGrid" ShowGridLines="false" Background="#679289" >
+            <!-- create grid-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Class -->
+            <TextBlock Grid.ColumnSpan="7" Margin="0,5,0,5" HorizontalAlignment="Center" FontSize="40">
+                Mathayom
+            </TextBlock>
+            <TextBlock Grid.ColumnSpan="7" Margin="0,5,0,5" HorizontalAlignment="Center" FontSize="40" Text="                         4/1"/> <!-- 30 Space!!-->
+            <TextBox Background="Transparent" Margin="0,5,0,5" HorizontalAlignment="Center" FontSize="40" Text="4/1"></TextBox>
+
+            <!-- Page -->
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Background="#68B984" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Class"></Button>
+                <Button Grid.Column="1" FontSize="22" Background="#D54C4C" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Room"></Button>
+                <Button x:Name="TextBox_PageTeacher" FontSize="22" Grid.Column="2" Background="#D54C4C" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Teacher"></Button>
+            </Grid>
+
+            <!--Table-->
+            <Grid ShowGridLines="false" x:Name="childGrid" Grid.Row="1" Grid.Column="1" Background="#ffa8d9" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Rectangle Grid.Column="0" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="1" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="2" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="3" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="4" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="5" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="6" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="7" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="8" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="9" Grid.Row="0" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+
+                <Rectangle Grid.Column="0" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="0" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="0" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="0" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+                <Rectangle Grid.Column="0" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#F1F7B5"/>
+
+                <Rectangle Grid.Column="1" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="2" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="3" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="4" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="5" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="6" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="7" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="8" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="9" Grid.Row="1" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+
+                <Rectangle Grid.Column="1" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="2" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="3" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="4" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="5" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="6" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="7" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="8" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="9" Grid.Row="2" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+
+                <Rectangle Grid.Column="1" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="2" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="3" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="4" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="5" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="6" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="7" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="8" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="9" Grid.Row="3" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+
+                <Rectangle Grid.Column="1" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="2" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="3" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="4" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="5" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="6" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="7" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="8" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="9" Grid.Row="4" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+
+                <Rectangle Grid.Column="1" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="2" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="3" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="4" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="5" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="6" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="7" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="8" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+                <Rectangle Grid.Column="9" Grid.Row="5" Stroke="#F64668" StrokeThickness="1.5" Fill="#ffa8d9"/>
+
+                <!-- Day-of-the-week row -->
+                <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">Mom</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">Tue</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">Tue</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center">Tue</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">Tue</TextBlock>
+
+                <!-- Period-of-the-week column -->
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Period 1</TextBlock>
+                <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">Period 2</TextBlock>
+                <TextBlock Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">Period 3</TextBlock>
+                <TextBlock Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">Period 4</TextBlock>
+                <TextBlock Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center">Period 5</TextBlock>
+                <TextBlock Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center">Period 6</TextBlock>
+                <TextBlock Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Center">Period 7</TextBlock>
+                <TextBlock Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center">Period 8</TextBlock>
+                <TextBlock Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center">Period 9</TextBlock>
+                
+        <!-- Mon -->
+                <!-- 1 1 -->
+                <Grid Grid.Column="1" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R11</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C11</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T11</TextBox>
+                </Grid>
+                <!-- 1 2 -->
+                <Grid Grid.Row="1" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R12</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C12</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T12</TextBox>
+                </Grid>
+                <!-- 1 3 -->
+                <Grid Grid.Row="1" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R13</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C13</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T13</TextBox>
+                </Grid>
+                <!-- 1 4 -->
+                <Grid Grid.Row="1" Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R14</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C14</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T14</TextBox>
+                </Grid>
+                <!-- 1 5 -->
+                <Grid Grid.Row="1" Grid.Column="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R15</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C15</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T15</TextBox>
+                </Grid>
+                <!-- 1 6 -->
+                <Grid Grid.Row="1" Grid.Column="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R16</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C16</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T16</TextBox>
+                </Grid>
+                <!-- 1 7 -->
+                <Grid Grid.Row="1" Grid.Column="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R17</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C17</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T17</TextBox>
+                </Grid>
+                <!-- 1 8 -->
+                <Grid Grid.Row="1" Grid.Column="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R18</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C18</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T18</TextBox>
+                </Grid>
+                <!-- 1 9 -->
+                <Grid Grid.Row="1" Grid.Column="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R19</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C19</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T19</TextBox>
+                </Grid>
+
+        <!-- Tue -->
+                <!--2 1-->
+                <Grid Grid.Row="2" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R21</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C21</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T21</TextBox>
+                </Grid>
+                <!--2 2-->
+                <Grid Grid.Row="2" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R22</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C22</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T22</TextBox>
+                </Grid>
+                <!--2 3-->
+                <Grid Grid.Row="2" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R23</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C23</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T23</TextBox>
+                </Grid>
+                <!-- 2 4 -->
+                <Grid Grid.Row="2" Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R24</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C24</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T24</TextBox>
+                </Grid>
+                <!-- 2 5 -->
+                <Grid Grid.Row="2" Grid.Column="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R25</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C25</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T25</TextBox>
+                </Grid>
+                <!-- 2 6 -->
+                <Grid Grid.Row="2" Grid.Column="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R26</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C26</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T26</TextBox>
+                </Grid>
+                <!-- 2 7 -->
+                <Grid Grid.Row="2" Grid.Column="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R27</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C27</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T27</TextBox>
+                </Grid>
+                <!-- 2 8 -->
+                <Grid Grid.Row="2" Grid.Column="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R28</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C28</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T28</TextBox>
+                </Grid>
+                <!-- 2 9 -->
+                <Grid Grid.Row="2" Grid.Column="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R29</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C29</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T29</TextBox>
+                </Grid>
+                
+            <!-- Wed -->
+                <!--3 1-->
+                <Grid Grid.Row="3" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R31</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C31</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T31</TextBox>
+                </Grid>
+                <!--3 2-->
+                <Grid Grid.Row="3" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R32</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C32</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T32</TextBox>
+                </Grid>
+                <!--3 3-->
+                <Grid Grid.Row="3" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R33</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C33</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T33</TextBox>
+                </Grid>
+                <!-- 3 4 -->
+                <Grid Grid.Row="3" Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R34</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C34</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T34</TextBox>
+                </Grid>
+                <!-- 3 5 -->
+                <Grid Grid.Row="3" Grid.Column="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R35</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C35</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T35</TextBox>
+                </Grid>
+                <!-- 3 6 -->
+                <Grid Grid.Row="3" Grid.Column="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R36</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C36</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T36</TextBox>
+                </Grid>
+                <!-- 3 7 -->
+                <Grid Grid.Row="3" Grid.Column="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R37</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C37</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T37</TextBox>
+                </Grid>
+                <!-- 3 8 -->
+                <Grid Grid.Row="3" Grid.Column="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R38</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C38</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T38</TextBox>
+                </Grid>
+                <!-- 3 9 -->
+                <Grid Grid.Row="3" Grid.Column="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R39</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C39</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T39</TextBox>
+                </Grid>
+                
+            <!-- Thu -->
+                <!--4 1-->
+                <Grid Grid.Row="4" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R41</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C41</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T41</TextBox>
+                </Grid>
+                <!--4 2-->
+                <Grid Grid.Row="4" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R42</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C42</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T42</TextBox>
+                </Grid>
+                <!--4 3-->
+                <Grid Grid.Row="4" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R43</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C43</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T43</TextBox>
+                </Grid>
+                <!-- 4 4 -->
+                <Grid Grid.Row="4" Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R44</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C44</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T44</TextBox>
+                </Grid>
+                <!-- 4 5 -->
+                <Grid Grid.Row="4" Grid.Column="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R45</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C45</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T45</TextBox>
+                </Grid>
+                <!-- 4 6 -->
+                <Grid Grid.Row="4" Grid.Column="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R46</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C46</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T46</TextBox>
+                </Grid>
+                <!-- 4 7 -->
+                <Grid Grid.Row="4" Grid.Column="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R47</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C47</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T47</TextBox>
+                </Grid>
+                <!-- 4 8 -->
+                <Grid Grid.Row="4" Grid.Column="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R48</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C48</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T48</TextBox>
+                </Grid>
+                <!-- 4 9 -->
+                <Grid Grid.Row="4" Grid.Column="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R49</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C49</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T49</TextBox>
+                </Grid>
+
+            <!-- Fri -->
+                <!--5 1-->
+                <Grid Grid.Row="5" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R51</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C51</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T51</TextBox>
+                </Grid>
+                <!--5 2-->
+                <Grid Grid.Row="5" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R52</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C52</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T52</TextBox>
+                </Grid>
+                <!--5 3-->
+                <Grid Grid.Row="5" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R53</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C53</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T53</TextBox>
+                </Grid>
+                <!--5 4-->
+                <Grid Grid.Row="5" Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R54</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C54</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T54</TextBox>
+                </Grid>
+                <!-- 5 5 -->
+                <Grid Grid.Row="5" Grid.Column="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R55</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C5</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T55</TextBox>
+                </Grid>
+                <!-- 5 6 -->
+                <Grid Grid.Row="5" Grid.Column="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R56</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C56</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T56</TextBox>
+                </Grid>
+                <!-- 5 7 -->
+                <Grid Grid.Row="5" Grid.Column="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R57</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C57</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T57</TextBox>
+                </Grid>
+                <!-- 5 8 -->
+                <Grid Grid.Row="5" Grid.Column="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R58</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C58</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T58</TextBox>
+                </Grid>
+                <!-- 5 9 -->
+                <Grid Grid.Row="5" Grid.Column="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">R59</TextBox>
+                    <TextBox Grid.Row="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">C59</TextBox>
+                    <TextBox Grid.Row="2" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">T59</TextBox>
+                </Grid>
+
+            </Grid>
+     
+            
+
+            <!-- Draws a separator under the days-of-the-week row -->
+
+        </Grid>
+    </Grid>
+</Window>
+
